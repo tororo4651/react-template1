@@ -115,18 +115,18 @@ export const App = () => {
   return (
     <React.Fragment>
 
-      <p className="test">class属性　段落。</p>
+      <p className="test">class属性　段落</p>
 
 
       <h1 style={{ marginTop: 40, color: 'red', fontSize: '2rem', 'font-weight': 'bold' }}>style属性　見出し1</h1>
 
 
       <ColoredMessage marginTop='40px' color='blue'>
-        <b>p要素　b要素　ColoredMessage1</b>
+        <b>１つ目　p要素　b要素　ColoredMessage</b>
       </ColoredMessage>
 
       <ColoredMessage color='pink'>
-        <b>p要素　b要素　ColoredMessage2</b>
+        <b>２つ目 p要素　b要素　ColoredMessage</b>
       </ColoredMessage>
 
 

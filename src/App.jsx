@@ -12,6 +12,7 @@ export const App = () => {
 
 
 
+
   // フラグの切り替え
 
   const [isFlag, setIsFlag] = useState(false);
@@ -19,6 +20,7 @@ export const App = () => {
   const switchFlag = () => {
     setIsFlag(!isFlag);
   };
+
 
 
 
@@ -42,6 +44,7 @@ export const App = () => {
   const resetNum = useCallback(() => {
     setNum(0);
   }, []);
+
 
 
 
@@ -69,6 +72,7 @@ export const App = () => {
   useEffect(() => {
     console.log('useEffect Test');
   }, [isFlag, num]);
+
 
 
 
@@ -126,7 +130,7 @@ export const App = () => {
       </ColoredMessage>
 
       <ColoredMessage color='pink'>
-        <b>２つ目 p要素　b要素　ColoredMessage</b>
+        ２つ目 p要素　b要素　ColoredMessage
       </ColoredMessage>
 
 
@@ -139,12 +143,12 @@ export const App = () => {
       <div className="mt-10 border-8 border-red-500 rounded-xl p-4">
         <button className="btn" type="button" onClick={switchFlag}>切り替えボタン</button>
 
-        {isFlag && <div style={{ marginBlockStart: '10px', marginLeft: 20, color: 'green', fontSize: 32 }}><b>フラグ</b></div>}
+        {isFlag && <p style={{ marginBlockStart: '10px', marginLeft: 20, color: 'green', fontSize: 32 }}><b>フラグ</b></p>}
       </div>
 
 
       <div className="mt-10 border-8 border-yellow-700 p-5">
-        <div className="text-3xl">{num}</div>
+        <p className="text-3xl">{num}</p>
 
         <button className="mt-2 border-8 border-green-700 rounded-xl p-4 bg-lime-400 text-xl font-bold" type="button" onClick={incrementNum}>+1 ボタン</button>
 
